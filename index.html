@@ -11,11 +11,9 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
-            background-color: #ffffff; /* Background Putih */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Background layar diubah menjadi putih */
+            background-color: #ffffff;
         }
-
-        /* Iframe */
         iframe {
             position: absolute;
             top: 0;
@@ -25,55 +23,27 @@
             border: none;
             z-index: 1;
         }
-
-        /* Teks Utama di Tengah */
+        /* Loader dengan teks Hijau Tosca */
         #loader {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #008080; /* Hijau Tosca */
+            /* Warna Hijau Tosca */
+            color: #008080;
+            font-family: Arial, sans-serif;
             text-align: center;
             font-weight: bold;
-            font-size: 1.1rem;
-            z-index: 3;
-            width: 100%;
-        }
-
-        /* Footer Teks di Bawah */
-        #footer-dev {
-            position: fixed;
-            bottom: 20px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            z-index: 4;
-            color: #888888; /* Warna abu-abu soft */
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-        }
-        
-        #footer-dev span {
-            font-weight: bold;
-            color: #444444; /* Nama Greenland dibuat sedikit lebih tegas */
+            z-index: 2;
         }
     </style>
 </head>
 <body>
-    
     <div id="loader">Memuat Aplikasi Mohon Tunggu...</div>
-
-    <div id="footer-dev">
-        Development by <span>Greenland Bhumiaji Agrofarm</span>
-    </div>
-
+    
     <iframe 
-        src="https://script.google.com/macros/s/AKfycbw48YhhNvBfrKMS0P0d7-58JrIlZxJ4ZMTogKOv4fEVg0_lSbPW968lRQWHTFujGas/exec" 
-        onload="
-            document.getElementById('loader').style.display='none';
-            document.getElementById('footer-dev').style.display='none';
-        ">
+        src="https://script.google.com/macros/s/AKfycbws5NPfVuMRubIRTb4_0slKEIPbcEo0UOMCCsyq-uLFF2cBzrNRPcUu5AQyCRPbZFqJ/exec" 
+        onload="document.getElementById('loader').style.display='none';">
     </iframe>
-
 </body>
 </html>
